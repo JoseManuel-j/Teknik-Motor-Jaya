@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Pesanan - Teknik Motor Jaya
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Teknik Motor Jaya
+        </div>
+
+<nav>
+    <a href="index.html">
+        Beranda
+    </a>
+
+    <a href="produk.html">
+        Produk
+    </a>
+
+    <a href="tentang.html">
+        Tentang Kami
+    </a>
+
+    <a href="pesanan.html">
+        Pesanan Saya
+    </a>
+
+    <a href="keranjang.html">
+        Keranjang
+
+        <span id="cart-count">
+            0
+        </span>
+    </a>
+</nav>
+
+    </header>
+
+
+
+    <!-- HEADER PESANAN -->
+
+    <section class="order-hero">
+
+        <h1>
+            Status Pesanan
+        </h1>
+
+        <p>
+            Pantau informasi dan proses pesanan Anda
+        </p>
+
+    </section>
+
+
+
+    <!-- PESANAN -->
+
+    <main class="order-section">
+
+        <div class="order-container">
+
+
+            <!-- PESANAN BERHASIL -->
+
+            <div class="order-success">
+
+                <div class="order-success-icon">
+                    ✓
+                </div>
+
+                <div>
+
+                    <h1>
+                        Pesanan Berhasil Dibuat
+                    </h1>
+
+                    <p>
+                        Terima kasih telah melakukan
+                        pemesanan di Teknik Motor Jaya.
+                    </p>
+
+                    <strong id="order-id">
+                        ID Pesanan
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="order-layout">
+
+
+                <!-- BAGIAN KIRI -->
+
+                <div class="order-main">
+
+
+                    <!-- STATUS PESANAN -->
+
+                    <div class="order-card">
+
+                        <div class="order-card-header">
+
+                            <div>
+
+                                <span class="order-label">
+                                    Status Pesanan
+                                </span>
+
+                                <h2 id="current-order-status">
+                                    Pesanan Diproses
+                                </h2>
+
+                            </div>
+
+                            <span class="order-status-badge">
+                                Diproses
+                            </span>
+
+                        </div>
+
+
+                        <div
+                            class="order-date"
+                            id="order-date"
+                        >
+                        </div>
+
+
+                        <div class="order-tracking">
+
+
+                            <div class="tracking-item active">
+
+                                <div class="tracking-icon">
+                                    ✓
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Pesanan Dibuat
+                                    </strong>
+
+                                    <p>
+                                        Pesanan berhasil diterima.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="tracking-line active">
+                            </div>
+
+
+                            <div class="tracking-item active">
+
+                                <div class="tracking-icon">
+                                    ⚙
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Pesanan Diproses
+                                    </strong>
+
+                                    <p>
+                                        Pesanan sedang dipersiapkan.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="tracking-line">
+                            </div>
+
+
+                            <div class="tracking-item">
+
+                                <div class="tracking-icon">
+                                    📦
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Pesanan Dikemas
+                                    </strong>
+
+                                    <p>
+                                        Produk sedang dikemas.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="tracking-line">
+                            </div>
+
+
+                            <div class="tracking-item">
+
+                                <div class="tracking-icon">
+                                    🚚
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Dalam Pengiriman
+                                    </strong>
+
+                                    <p>
+                                        Pesanan menuju alamat Anda.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="tracking-line">
+                            </div>
+
+
+                            <div class="tracking-item">
+
+                                <div class="tracking-icon">
+                                    🏠
+                                </div>
+
+                                <div>
+
+                                    <strong>
+                                        Pesanan Selesai
+                                    </strong>
+
+                                    <p>
+                                        Pesanan telah diterima.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- INFORMASI PEMBAYARAN -->
+
+                    <div
+                        class="order-card"
+                        id="payment-information"
+                    >
+                    </div>
+
+
+
+                    <!-- INFORMASI PENGIRIMAN -->
+
+                    <div class="order-card">
+
+                        <h2>
+                            Informasi Pengiriman
+                        </h2>
+
+                        <div id="shipping-information">
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PRODUK PESANAN -->
+
+                    <div class="order-card">
+
+                        <h2>
+                            Produk Pesanan
+                        </h2>
+
+                        <div id="order-products">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- RINGKASAN PESANAN -->
+
+                <aside class="order-summary">
+
+                    <h2>
+                        Ringkasan Pesanan
+                    </h2>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <span id="order-subtotal">
+                            Rp0
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Ongkos Kirim
+                        </span>
+
+                        <span id="order-shipping">
+                            Rp0
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-row">
+
+                        <span>
+                            Metode Pembayaran
+                        </span>
+
+                        <span id="order-payment">
+                            -
+                        </span>
+
+                    </div>
+
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total Pembayaran
+                        </span>
+
+                        <span id="order-total">
+                            Rp0
+                        </span>
+
+                    </div>
+
+
+                    <a
+                        href="produk.html"
+                        class="btn-primary order-button"
+                    >
+                        Belanja Lagi
+                    </a>
+
+
+                    <a
+                        href="index.html"
+                        class="order-home-button"
+                    >
+                        ← Kembali ke Beranda
+                    </a>
+
+                </aside>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <h2>
+                    Teknik Motor Jaya
+                </h2>
+
+                <p>
+                    Toko kebutuhan sparepart,
+                    oli dan aksesoris motor.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Menu
+                </h3>
+
+                <a href="index.html">
+                    Beranda
+                </a>
+
+                <a href="produk.html">
+                    Produk
+                </a>
+
+                <a href="tentang.html">
+                    Tentang Kami
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h3>
+                    Hubungi Kami
+                </h3>
+
+                <p>
+                    WhatsApp: 081271829644
+                </p>
+
+                <p>
+                    Email: teknikmotorjaya@email.com
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Teknik Motor Jaya.
+            All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="../js/produk.js"></script>
+
+    <script src="../js/script.js"></script>
+
+    <script src="../js/pesanan.js"></script>
+
+
+</body>
+
+</html>

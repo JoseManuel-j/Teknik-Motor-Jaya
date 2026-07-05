@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Teknik Motor Jaya</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            Teknik Motor Jaya
+        </div>
+
+<nav>
+    <a href="index.html">
+        Beranda
+    </a>
+
+    <a href="produk.html">
+        Produk
+    </a>
+
+    <a href="tentang.html">
+        Tentang Kami
+    </a>
+
+    <a href="pesanan.html">
+        Pesanan Saya
+    </a>
+
+    <a href="keranjang.html">
+        Keranjang
+
+        <span id="cart-count">
+            0
+        </span>
+    </a>
+</nav>
+
+
+    </header>
+
+
+    <section class="product-header">
+
+        <h1>Checkout</h1>
+
+        <p>
+            Lengkapi data pengiriman dan pembayaran
+        </p>
+
+    </section>
+
+
+    <main class="checkout-section">
+
+        <div class="checkout-container">
+
+
+            <!-- FORM CHECKOUT -->
+
+            <form
+                class="checkout-form"
+                id="checkout-form"
+            >
+
+                <div class="checkout-card">
+
+                    <h2>1. Data Pembeli</h2>
+
+
+                    <div class="form-group">
+
+                        <label for="customer-name">
+                            Nama Lengkap
+                        </label>
+
+                        <input
+                            type="text"
+                            id="customer-name"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customer-phone">
+                            Nomor WhatsApp
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="customer-phone"
+                            placeholder="Contoh: 081234567890"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="customer-email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="customer-email"
+                            placeholder="Masukkan email"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- ALAMAT -->
+
+                <div class="checkout-card">
+
+                    <h2>2. Alamat Pengiriman</h2>
+
+
+                    <div class="form-group">
+
+                        <label for="customer-address">
+                            Alamat Lengkap
+                        </label>
+
+                        <textarea
+                            id="customer-address"
+                            rows="5"
+                            placeholder="Nama jalan, nomor rumah, RT/RW"
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="customer-city">
+                                Kota
+                            </label>
+
+                            <select
+                                id="customer-city"
+                                required
+                            >
+
+                                <option value="">
+                                    Pilih Kota
+                                </option>
+
+                                <option value="Jakarta">
+                                    Jakarta
+                                </option>
+
+                                <option value="Tangerang">
+                                    Tangerang
+                                </option>
+
+                                <option value="Depok">
+                                    Depok
+                                </option>
+
+                                <option value="Bekasi">
+                                    Bekasi
+                                </option>
+
+                                <option value="Bogor">
+                                    Bogor
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="postal-code">
+                                Kode Pos
+                            </label>
+
+                            <input
+                                type="text"
+                                id="postal-code"
+                                placeholder="Kode Pos"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PENGIRIMAN -->
+
+                <div class="checkout-card">
+
+                    <h2>3. Pilih Pengiriman</h2>
+
+
+                    <div class="shipping-options">
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="shipping"
+                                value="JNE Regular"
+                                data-price="15000"
+                                required
+                            >
+
+                            <div>
+
+                                <strong>
+                                    JNE Regular
+                                </strong>
+
+                                <span>
+                                    Estimasi 2 - 4 Hari
+                                </span>
+
+                            </div>
+
+                            <b>
+                                Rp15.000
+                            </b>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="shipping"
+                                value="J&T Express"
+                                data-price="18000"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    J&T Express
+                                </strong>
+
+                                <span>
+                                    Estimasi 2 - 3 Hari
+                                </span>
+
+                            </div>
+
+                            <b>
+                                Rp18.000
+                            </b>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="shipping"
+                                value="SiCepat REG"
+                                data-price="20000"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    SiCepat REG
+                                </strong>
+
+                                <span>
+                                    Estimasi 1 - 3 Hari
+                                </span>
+
+                            </div>
+
+                            <b>
+                                Rp20.000
+                            </b>
+
+                        </label>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- PEMBAYARAN -->
+
+                <div class="checkout-card">
+
+                    <h2>4. Metode Pembayaran</h2>
+
+
+                    <div class="payment-options">
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="Transfer Bank"
+                                required
+                            >
+
+                            <div>
+
+                                <strong>
+                                    Transfer Bank
+                                </strong>
+
+                                <span>
+                                    Transfer melalui rekening bank
+                                </span>
+
+                            </div>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="QRIS"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    QRIS
+                                </strong>
+
+                                <span>
+                                    Bayar menggunakan QRIS
+                                </span>
+
+                            </div>
+
+                        </label>
+
+
+                        <label class="option-card">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="COD"
+                            >
+
+                            <div>
+
+                                <strong>
+                                    COD
+                                </strong>
+
+                                <span>
+                                    Bayar ketika barang diterima
+                                </span>
+
+                            </div>
+
+                        </label>
+
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="order-button"
+                >
+
+                    Buat Pesanan
+
+                </button>
+
+
+            </form>
+
+
+ <div class="checkout-summary">
+
+    <h2>Ringkasan Pesanan</h2>
+
+    <!-- PRODUK PESANAN -->
+    <div id="checkout-items"></div>
+
+    <!-- PERHITUNGAN -->
+    <div class="checkout-calculation">
+
+        <div class="summary-row">
+
+            <span>Subtotal</span>
+
+            <span id="checkout-subtotal">
+                Rp0
+            </span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Ongkos Kirim</span>
+
+            <span id="shipping-cost">
+                Rp0
+            </span>
+
+        </div>
+
+        <div class="summary-total">
+
+            <span>Total Pembayaran</span>
+
+            <span id="checkout-total">
+                Rp0
+            </span>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+
+    </main>
+
+
+<script src="../js/produk.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/checkout.js"></script>
+
+</body>
+</html>
