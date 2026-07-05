@@ -30,7 +30,7 @@ const products = [
         id: 2,
         name: "Busi NGK Motor",
         category: "Sparepart Motor",
-        image: "assets/images/busi-ngk.jpg",
+        image: "assets/images/Busi-ngk.jpg",
         description: "Busi NGK membantu proses pembakaran mesin menjadi lebih optimal serta menjaga performa mesin motor tetap stabil.",
         featured: true,
         variants: [
